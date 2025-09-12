@@ -1,6 +1,5 @@
 cheklist = []
-tr = 0
-fl = 0
+tr = fl = 0
 for n in range(int(input())):
     data = input().split()
 

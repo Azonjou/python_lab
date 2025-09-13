@@ -1,5 +1,3 @@
-name = input()
-age = int(input())
-print("Имя: " + name)
-print("Возраст: " + str(age))
+name = input("Имя: ")
+age = input("Возраст: ")
 print("Првиет, " + name + "!", "Через год тебе будет " + str(age) + ".")

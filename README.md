@@ -3,87 +3,93 @@
 <h2>Лабараторная №1:</h2>
 
 **Задание №1:**
-```
-Входные данные:
-Алиса
-19
-
-Вывод:
-Привет, Алиса! Через год тебе будет 20.
+```python
+name = input("Имя: ")
+age = int(input("Возраст: "))
+print("Првиет, " + name + "!", "Через год тебе будет " + str(age+1) + ".")
 ```
 ![exe1!](/images/lab01/exe1.png)
 -------------------------------------------
 **Задание №2:**
-```
-Входные данные:
-3.5
-4.25
-
-Вывод:
-sum=7.75; avg=3.88
+```python
+a = input()
+b = float(input())
+print("a: " + a.replace('.', ','))
+print("b: " + str(b))
+print("sum=" + f"{(float(a)+b):.2f}" + ";" + " avg=" + f"{(float(a)+b)/2:.2f}")
+print("hhhhh")
 ```
 ![exe2!](/images/lab01/exe2.png)
 -------------------------------------------
 **Задание №3:**
-```
-Входные данные:
-1000
-10
-20
+```python
+price = int(input())
+discount = int(input())
+vat = int(input())
 
-Вывод: 
-База после скидки: 900.00 ₽
-НДС:               180.00 ₽
-Итого к оплате:    1080.00 ₽
+base = price * (1 - discount/100)
+vat_amount = base * (vat/100)
+total = base + vat_amount
+
+print("База после скидки: " + f"{base:.2f}" + " ₽")
+print("НДС: " + f"{vat_amount:.2f}" + " ₽")
+print("Итого к оплате: " + f"{total:.2f}" + " ₽")
 ```
 ![exe3!](/images/lab01/exe3.png)
 -------------------------------------------
 **Задание №4:**
-```
-Входные данные:
-135
-
-Вывод: 2:15
+```python
+m = int(input("Минуты: "))
+print(str(m//60) + ":" + f"{(m%60):02d}")
 ```
 ![exe4!](/images/lab01/exe4.png)
 -------------------------------------------
 **Задание №5:**
-```
-Входные данные:
-Иванов   Иван   Иванович
-
-Вывод:
-ФИО:   Иванов   Иван   Иванович  
-Инициалы: ИИИ.
-Длина (символов): 20
+```python
+a, b, c = map(str, input().split())
+print("ФИО: ", a, b, c)
+print("Инициалы: ", a[0] + b[0] + c[0] + '.')
+print("Длина (символов): " + str(len(a) + len(b) + len(c) + 2))
 ```
 ![exe5!](/images/lab01/exe5.png)
 -------------------------------------------
 **Задание №6:**
-```
-Входные данные:
-4
-1337
-Максимов Максим 18 True
-Геннадьев Геннадий 17 False
-Алексеев Алексей 17 True
+```python
+cheklist = []
+tr = fl = 0
+for n in range(int(input())):
+    data = input().split()
 
-Вывод:
-in_1: 1337
-in_2: Максимов Максим 18 True
-in_3: Геннадьев Геннадий 17 False
-in_4: Алексеев Алексей 17 True
-out: 2 1
+    f = data[0] if len(data) > 0 else ""
+    nm = data[1] if len(data) > 1 else ""
+    age = data[2] if len(data) > 2 else ""
+    bol = data[3] if len(data) > 3 else ""
+
+    cheklist.append([f, nm, age, bol])
+for i in range(len(cheklist)):
+    print(f"in_{i+1}:", cheklist[i][0], cheklist[i][1], cheklist[i][2], cheklist[i][3])
+    if cheklist[i][3] == 'True': tr += 1
+    elif cheklist[i][3] == 'False': fl += 1
+print("out:", tr, fl)
 ```
 ![exe6!](/images/lab01/exe6.png)
 -------------------------------------------
 **Задание №7:**
-```
-Входные данные:
-thisisabracadabraHt1eadljjl12ojh.
-
-Вывод:
-out: Hello.
+```python
+ishod = input("in: ")
+for i in range(len(ishod)):
+    if ishod[i].isupper():
+        first_let = i
+        break
+numbers_list = '0123456789'
+for i in range(len(ishod)):
+    if ishod[i] in numbers_list and ishod[i+1] not in numbers_list:
+        seconf_let = i+1;
+        break
+distance = seconf_let - first_let
+c = ''.join([ishod[i] for i in range(first_let, len(ishod), distance)])
+print("out:", c)
 ```
 ![exe7!](/images/lab01/exe7.png)
+<!-- Код для изображения: ![название файла!](путь к файлу(изображению)) -->
 -------------------------------------------

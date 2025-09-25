@@ -12,8 +12,10 @@ if len(min_max) != 0:
 else:
      print("ValueError")
 ```
+
 ![exe1_1_1!][/images/lab02/exe1_1_1.png]
 ![exe1_1_2!][/images/lab02/exe1_1_2.png]
+----------------------------------------------------
 **Пункт №2**
 ```python
 unique_sorted = [1.0, 1, 2.5, 2.5, 0]
@@ -21,8 +23,10 @@ elements = list(set(elem_sort(unique_sorted)))
 elements.sort(reverse=False)
 print(elements)
 ```
+
 ![exe1_2_1!][/images/lab02/exe1_2_1.png]
 ![exe1_2_2!][/images/lab02/exe1_2_2.png]
+----------------------------------------------------
 **Пункт №3**
 ```python
 flatten_elem = [[1, 2], "ab"]
@@ -34,8 +38,10 @@ for i in range(len(flatten_elem)):
         result_sort = "TypeError"
 print(result_sort)
 ```
+
 ![exe1_3_1!][/images/lab02/exe1_3_1.png]
 ![exe1_3_2!][/images/lab02/exe1_3_2.png]
+
 --------------------------------------------------------------------
 **Задание №2:**
 **Пункт №1**
@@ -46,8 +52,10 @@ if not matrix:
 else:
     print(matr_srt(equal_len(matrix)))
 ```
+
 ![exe2_1_1!][/images/lab02/exe2_1_1.png]
 ![exe2_1_2!][/images/lab02/exe2_1_2.png]
+----------------------------------------------------
 **Пункт №2**
 ```python
 row_sums = [[1, 2], [3]]
@@ -60,8 +68,10 @@ else:
     else:
         print("ValueError")
 ```
+
 ![exe2_2_1!][/images/lab02/exe2_2_1.png]
 ![exe2_2_2!][/images/lab02/exe2_2_2.png]
+----------------------------------------------------
 **Пункт №3**
 ```python
 col_sums = [[1, 2], [3]]
@@ -74,108 +84,57 @@ else:
     else:
         print("ValueError")
 ```
+
 ![exe2_3_1!][/images/lab02/exe3_3_1.png]
 ![exe2_3_2!][/images/lab02/exe3_3_2.png]
+
 --------------------------------------------------------------------
 **Задание №3:**
 ```python
-def elem_sort(el_ls):
-    """
-    Преобразует элементы списка в соответствующие числовые типы данных.
+tuples = ("Петров Пётр Петрович", "IKBO-12", 5.0)
 
-    Функция анализирует строковое представление каждого элемента списка
-    и преобразует его в int (если число целое) или float (если число с плавающей точкой).
+def format_record(tuple_input):
+    """Форматирует входные данные в строку заданного формата
 
-    Args:
-        el_ls (list): Список элементов, которые можно преобразовать в числа.
-                     Элементы могут быть строками, целыми или вещественными числами.
-
-    Returns:
-        list: Список чисел, где элементы преобразованы в int или float.
-
-    Examples:
-        >>> elem_sort([1.5, 2, 2.0, -3.1])
-        [1.5, 2, 2.0, -3.1]
-
-        >>> elem_sort(['1.5', '2', '2.0', '-3.1'])
-        [1.5, 2, 2.0, -3.1]
-
-        >>> elem_sort(['3', '4.7', '-2'])
-        [3, 4.7, -2]
-
-    Note:
-        Функция определяет тип по наличию точки в строковом представлении числа.
-        Числа с одной точкой преобразуются в float, остальные - в int.
-    """
-    lst_sort = []
-    for elem in range(len(el_ls)):
-        if str(el_ls[elem]).count('.') == 1: lst_sort.append(float(el_ls[elem]))
-        else: lst_sort.append(int(el_ls[elem]))
-    return lst_sort
-
-
-
-def matr_srt(matr_lst):
-    """
-    Меняет элементы столбцов и строк местами
-
-    Функция принимает матрицу, состоящую из строк и/или столбцов
-    и возвращает матрицу, где элементы строк и столбцов поменяны местами
+    Функция принимает кортеж с данными студента, проверяет их корректность
+    и возвращает отформатированную строку вида "Фамилия И.О., гр. Номер группы, GPA X.XX"
 
     Args:
-        matr_lst (list): Матрица, состоящая из строк и/или столбцов.
-        Элементы строк и столбцов могут быть целыми числами или дробными числами
+        tuple_input(tuple): Кортеж с данными студента в формате:
+            -tuple_input[0] (str): ФИО студента (Например: "Иванов Иван Иванович")
+            -tuple_input[1] (str): Номер группы (Например: "BIVT-25")
+            -tuple_input[2] (float): Средний балл (Например: 4.6)
 
     Returns:
-        modify_matrix (list): Матрица, где столбцы и строки поменяны местами
+        str: Отформатированная строка данных студента
+
+    Raises:
+        ValueError: Если входные данные некорректны
+            - Длина кортежа меньше 3 элементов
+            - Имя, Группа или ср. балл пустые
+        TypeError: Если входные данные некорректны
+            - Ср. балл не является типом данных float
 
     Examples:
-        >>> matr_srt([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-        [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+        >>> format_record(("Иванов Иван Иванович", "BIVT-25", 4.6))
+        Иванов И.И., BIVT-25, GPA 4.60
 
-        >>> matr_srt([[1], [2], [3]])
-        [[1, 2, 3]]
-
-        >>> matr_srt([[1, 2], [3, 4]])
-        [[1, 3], [2, 4]]
+        >>> format_record(("Петров Пётр Петрович", "IKBO-12", 5.0))
+        Петров П.П., IKBO-12, GPA 5.00
     """
-    rows, cols = len(matr_lst), len(matr_lst[0])
-    modify_matrix = [[1 for i in range(rows)] for j in range(cols)]
-    for i in range(cols):
-        for j in range(rows):
-            modify_matrix[i][j] = matr_lst[j][i]
-    return modify_matrix
-
-
-
-def equal_len(matr_lst):
-    """
-    Проверяет чтобы длина строк матрицы была одинаковой
-
-    Функция принимает матрицу, состоящую из строк и столбцов.
-    Проходится по строкам матрицы и проверяет их на одинаковую длину.
-
-    Args:
-        matr_lst (list): Матрица, состоящая из строк и столбцов.
-        Элементы строк и столбцов могут быть целыми числами или дробными числами
-
-    Returns:
-        matr_lst (list): Возвращает входную матрицу, либо ValueError, если длинны строк отличаются
-
-    Examples:
-        >>> matr_srt([[1, 2, 3], [4, 5, 6]])
-        [[1, 2, 3], [4, 5, 6]]
-
-        >>> matr_srt([[1, 2], [3]])
-        ValueError
-    """
-    max_len = max(len(s) for s in matr_lst)
-    if all(len(s) == max_len for s in matr_lst):
-        return matr_lst
+    if len(tuple_input) < 3 or "" in tuple_input[:3]: print("ValueError")
+    elif type(tuple_input[2]) != float: print("TypeError")
     else:
-        return "ValueError"
+        name = tuple_input[0].strip().split()
+        name_out = name[0].capitalize() + ' '
+        for i in range(1, len(name)):
+            name_out += name[i][0].upper() + "."
+        print(name_out + ", " + tuple_input[1] + ", " + f"GPA {tuple_input[2]:.2f}")
+format_record(tuples)
 ```
+
 ![exe3_1!][/images/lab02/exe3_1.png]
 ![exe3_2!][/images/lab02/exe3_2.png]
+----------------------------------------------------------
 <!-- Код для изображения: ![название файла!](путь к файлу(изображению)) -->
 -------------------------------------------

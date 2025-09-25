@@ -133,7 +133,7 @@ def format_record(tuple_input):
 format_record(tuples)
 ```
 
-![exe3_1!][/images/lab02/exe3_1.png]
+![exe3_1!][D:\Code\Python\Labs\python_lab\images\lab02\exe3_1.png]
 ![exe3_2!][/images/lab02/exe3_2.png]
 ----------------------------------------------------------
 <!-- Код для изображения: ![название файла!](путь к файлу(изображению)) -->

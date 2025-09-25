@@ -13,7 +13,7 @@ else:
      print("ValueError")
 ```
 
-![exe1_1_1!][/images/lab02/exe1_1_1.png]
+![exe1_1_1!][https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png]
 ![exe1_1_2!][/images/lab02/exe1_1_2.png]
 ----------------------------------------------------
 **Пункт №2**

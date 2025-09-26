@@ -14,10 +14,12 @@ else:
      print("ValueError")
 ```
 
-
-![QR-код 1](https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_1.png?raw=true)
-![QR-код 2](https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_2.png?raw=true)
-
+<p align="center">
+ <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png?raw=true" alt="qr"/>
+</p>
+<p align="center">
+ <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_2.png?raw=true" alt="qr"/>
+</p>
 
 **Пункт №2**
 ```python
@@ -84,14 +86,12 @@ else:
         print("ValueError")
 ```
 
-----------------------------------------------------
-<div align="center">
-<img width="200px" source="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_1.png?raw=true" alt="QR-код"/>
-</div>
-<div align="center">
-<img width="200px" source="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_2.png?raw=true" alt="QR-код"/>
-</div>
-----------------------------------------------------
+<p align="center">
+ <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_2_1.png?raw=true" alt="qr"/>
+</p>
+<p align="center">
+ <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_2_2.png?raw=true" alt="qr"/>
+</p>
 
 **Пункт №3**
 ```python

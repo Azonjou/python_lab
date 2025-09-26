@@ -14,13 +14,11 @@ else:
      print("ValueError")
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_2.png?raw=true" alt="qr"/>
-</p>
-----------------------------------------------------
+
+![QR-код 1](https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_1.png?raw=true)
+![QR-код 2](https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_2.png?raw=true)
+
+
 **Пункт №2**
 ```python
 unique_sorted = [1.0, 1, 2.5, 2.5, 0]
@@ -35,6 +33,7 @@ print(elements)
 <p align="center">
  <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_2_2.png?raw=true" alt="qr"/>
 </p>
+
 ----------------------------------------------------
 **Пункт №3**
 ```python
@@ -85,13 +84,15 @@ else:
         print("ValueError")
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_2_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_2_2.png?raw=true" alt="qr"/>
-</p>
 ----------------------------------------------------
+<div align="center">
+<img width="200px" source="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_1.png?raw=true" alt="QR-код"/>
+</div>
+<div align="center">
+<img width="200px" source="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exel_1_2.png?raw=true" alt="QR-код"/>
+</div>
+----------------------------------------------------
+
 **Пункт №3**
 ```python
 col_sums = [[1, 2], [3]]
@@ -104,12 +105,13 @@ else:
     else:
         print("ValueError")
 ```
+--------------------------------------------------------------------
 
 <p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_3_1.png?raw=true" alt="qr"/>
+ <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png?raw=true" alt="qr"/>
 </p>
 <p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_3_2.png?raw=true" alt="qr"/>
+ <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_2.png?raw=true" alt="qr"/>
 </p>
 
 --------------------------------------------------------------------

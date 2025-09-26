@@ -3,7 +3,6 @@
 <h2>Лабараторная №2:</h2>
 
 **Задание №1:**
-
 **Пункт №1**
 ```python
 min_max = [1.5, 2, 2.0, -3.1]
@@ -14,13 +13,9 @@ else:
      print("ValueError")
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_2.png?raw=true" alt="qr"/>
-</p>
-
+![exe1_1_1][/images/lab02/exe1_1_1.png]
+![exe1_1_2][/images/lab02/exe1_1_2.png]
+----------------------------------------------------
 **Пункт №2**
 ```python
 unique_sorted = [1.0, 1, 2.5, 2.5, 0]
@@ -29,13 +24,8 @@ elements.sort(reverse=False)
 print(elements)
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_2_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_2_2.png?raw=true" alt="qr"/>
-</p>
-
+![exe1_2_1!][/images/lab02/exe1_2_1.png]
+![exe1_2_2!][/images/lab02/exe1_2_2.png]
 ----------------------------------------------------
 **Пункт №3**
 ```python
@@ -49,16 +39,11 @@ for i in range(len(flatten_elem)):
 print(result_sort)
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_3_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_3_2.png?raw=true" alt="qr"/>
-</p>
+![exe1_3_1!][/images/lab02/exe1_3_1.png]
+![exe1_3_2!][/images/lab02/exe1_3_2.png]
 
 --------------------------------------------------------------------
 **Задание №2:**
-
 **Пункт №1**
 ```python
 matrix = [[1, 2], [3, 4]]
@@ -68,10 +53,8 @@ else:
     print(matr_srt(equal_len(matrix)))
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_1_2.png?raw=true" alt="qr"/>
-</p>
-
+![exe2_1_1!][/images/lab02/exe2_1_1.png]
+![exe2_1_2!][/images/lab02/exe2_1_2.png]
 ----------------------------------------------------
 **Пункт №2**
 ```python
@@ -86,13 +69,9 @@ else:
         print("ValueError")
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_2_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe2_2_2.png?raw=true" alt="qr"/>
-</p>
-
+![exe2_2_1!][/images/lab02/exe2_2_1.png]
+![exe2_2_2!][/images/lab02/exe2_2_2.png]
+----------------------------------------------------
 **Пункт №3**
 ```python
 col_sums = [[1, 2], [3]]
@@ -105,14 +84,9 @@ else:
     else:
         print("ValueError")
 ```
---------------------------------------------------------------------
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_2.png?raw=true" alt="qr"/>
-</p>
+![exe2_3_1!][/images/lab02/exe3_3_1.png]
+![exe2_3_2!][/images/lab02/exe3_3_2.png]
 
 --------------------------------------------------------------------
 **Задание №3:**
@@ -159,12 +133,8 @@ def format_record(tuple_input):
 format_record(tuples)
 ```
 
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe3_1.png?raw=true" alt="qr"/>
-</p>
-<p align="center">
- <img width="200px" src="https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe3_2.png?raw=true" alt="qr"/>
-</p>
+![exe3_1!][D:\Code\Python\Labs\python_lab\images\lab02\exe3_1.png]
+![exe3_2!][/images/lab02/exe3_2.png]
 ----------------------------------------------------------
 <!-- Код для изображения: ![название файла!](путь к файлу(изображению)) -->
 -------------------------------------------

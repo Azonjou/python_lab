@@ -1,31 +1,33 @@
 from function import elem_sort
 
 # Exe 1
-min_max = [1.5, 2, 2.0, -3.1]
-if len(min_max) != 0:
-     # min_max = elem_sort(min_max)
-     print(tuple([min(min_max), max(min_max)]))
-else:
-     print("ValueError")
-
+def min_max(mns_mxs):
+    mns_mxs = [1.5, 2, 2.0, -3.1]
+    if len(mns_mxs) != 0:
+        return tuple([min(mns_mxs), max(mns_mxs)])
+    else:
+        raise ValueError
+print(min_max([1.5, 2, 2.0, -3.1]))
 # Exe 2
 
 
-unique_sorted = [1.0, 1, 2.5, 2.5, 0]
-elements = list(set(elem_sort(unique_sorted)))
-elements.sort(reverse=False)
-print(elements)
+def unique_sorted(elements):
+    elements = list(set(elem_sort(elements)))
+    elements.sort(reverse=False)
+    return elements
+print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 
 # Exe 3
 
-flatten_elem = [[1, 2], "ab"]
-result_sort = []
-for i in range(len(flatten_elem)):
-    if type(flatten_elem[i]) in [list, tuple]:
-        result_sort += list(flatten_elem[i])
-    else:
-        result_sort = "TypeError"
-print(result_sort)
+def flatten(flatten_elem):
+    result_sort = []
+    for i in range(len(flatten_elem)):
+        if type(flatten_elem[i]) in [list, tuple]:
+            result_sort += list(flatten_elem[i])
+        else:
+            raise TypeError
+    return result_sort
+print(flatten([[1, 2], [3, 4]]))
 
 
 

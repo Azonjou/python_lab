@@ -10,7 +10,6 @@ def min_max(mns_mxs):
 print(min_max([1.5, 2, 2.0, -3.1]))
 # Exe 2
 
-
 def unique_sorted(elements):
     elements = list(set(elem_sort(elements)))
     elements.sort(reverse=False)

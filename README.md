@@ -5,23 +5,25 @@
 **Задание №1:**
 **Пункт №1**
 ```python
-min_max = [1.5, 2, 2.0, -3.1]
-if len(min_max) != 0:
-     # min_max = elem_sort(min_max)
-     print(tuple([min(min_max), max(min_max)]))
-else:
-     print("ValueError")
+def min_max(mns_mxs):
+    mns_mxs = [1.5, 2, 2.0, -3.1]
+    if len(mns_mxs) != 0:
+        return tuple([min(mns_mxs), max(mns_mxs)])
+    else:
+        raise ValueError
+print(min_max([1.5, 2, 2.0, -3.1]))
 ```
 
-![exe1_1_1!][https://github.com/Azonjou/python_lab/blob/main/images/lab02/exe1_1_1.png]
+![exe1_1_1!][/images/lab02/exe1_1_1.png]
 ![exe1_1_2!][/images/lab02/exe1_1_2.png]
 ----------------------------------------------------
 **Пункт №2**
 ```python
-unique_sorted = [1.0, 1, 2.5, 2.5, 0]
-elements = list(set(elem_sort(unique_sorted)))
-elements.sort(reverse=False)
-print(elements)
+def unique_sorted(elements):
+    elements = list(set(elem_sort(elements)))
+    elements.sort(reverse=False)
+    return elements
+print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 ```
 
 ![exe1_2_1!][/images/lab02/exe1_2_1.png]
@@ -29,14 +31,15 @@ print(elements)
 ----------------------------------------------------
 **Пункт №3**
 ```python
-flatten_elem = [[1, 2], "ab"]
-result_sort = []
-for i in range(len(flatten_elem)):
-    if type(flatten_elem[i]) in [list, tuple]:
-        result_sort += list(flatten_elem[i])
-    else:
-        result_sort = "TypeError"
-print(result_sort)
+def flatten(flatten_elem):
+    result_sort = []
+    for i in range(len(flatten_elem)):
+        if type(flatten_elem[i]) in [list, tuple]:
+            result_sort += list(flatten_elem[i])
+        else:
+            raise TypeError
+    return result_sort
+print(flatten([[1, 2], [3, 4]]))
 ```
 
 ![exe1_3_1!][/images/lab02/exe1_3_1.png]
@@ -46,11 +49,12 @@ print(result_sort)
 **Задание №2:**
 **Пункт №1**
 ```python
-matrix = [[1, 2], [3, 4]]
-if not matrix:
-    print("ValueError")
-else:
-    print(matr_srt(equal_len(matrix)))
+def transpose(matrix):
+    if not matrix:
+        raise ValueError
+    else:
+        return matr_srt(equal_len(matrix))
+print(transpose([[1, 2], [3, 4]]))
 ```
 
 ![exe2_1_1!][/images/lab02/exe2_1_1.png]
@@ -58,15 +62,16 @@ else:
 ----------------------------------------------------
 **Пункт №2**
 ```python
-row_sums = [[1, 2], [3]]
-if not row_sums:
-    print("ValueError")
-else:
-    if equal_len(row_sums) != "ValueError":
-        row_sums = [len(i) for i in row_sums]
-        print(row_sums)
+def row_sums(col_row_sums):
+    if not col_row_sums:
+        raise ValueError
     else:
-        print("ValueError")
+        if equal_len(col_row_sums) != "ValueError":
+            col_row_sums = [sum(i) for i in col_row_sums]
+            return col_row_sums
+        else:
+            raise ValueError
+print(row_sums([[1, 2, 3], [4, 5, 6]]))
 ```
 
 ![exe2_2_1!][/images/lab02/exe2_2_1.png]
@@ -74,15 +79,16 @@ else:
 ----------------------------------------------------
 **Пункт №3**
 ```python
-col_sums = [[1, 2], [3]]
-if not col_sums:
-    print("ValueError")
-else:
-    if equal_len(col_sums) != "ValueError":
-        col_sums = [sum(row[j] for row in col_sums) for j in range(len(col_sums[0]))]
-        print(col_sums)
+def col_sums(sums_cls):
+    if not sums_cls:
+        raise ValueError
     else:
-        print("ValueError")
+        if equal_len(sums_cls) != "ValueError":
+            sums_cls = [sum(row[j] for row in sums_cls) for j in range(len(sums_cls[0]))]
+            return sums_cls
+        else:
+            raise ValueError
+print(col_sums([[-1, 1], [10, -10]]))
 ```
 
 ![exe2_3_1!][/images/lab02/exe3_3_1.png]
@@ -133,7 +139,7 @@ def format_record(tuple_input):
 format_record(tuples)
 ```
 
-![exe3_1!][D:\Code\Python\Labs\python_lab\images\lab02\exe3_1.png]
+![exe3_1!][/images/lab02/exe3_1.png]
 ![exe3_2!][/images/lab02/exe3_2.png]
 ----------------------------------------------------------
 <!-- Код для изображения: ![название файла!](путь к файлу(изображению)) -->

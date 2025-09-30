@@ -14,8 +14,8 @@ def min_max(mns_mxs):
 print(min_max([1.5, 2, 2.0, -3.1]))
 ```
 
-![exe1_1_1!][/images/lab02/exe1_1_1.png]
-![exe1_1_2!][/images/lab02/exe1_1_2.png]
+![exe1_1_1!](./images/lab02/exe1_1_1.png)
+![exe1_1_2!](./images/lab02/exe1_1_2.png)
 ----------------------------------------------------
 **Пункт №2**
 ```python
@@ -26,8 +26,8 @@ def unique_sorted(elements):
 print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 ```
 
-![exe1_2_1!][/images/lab02/exe1_2_1.png]
-![exe1_2_2!][/images/lab02/exe1_2_2.png]
+![exe1_2_1!](./images/lab02/exe1_2_1.png)
+![exe1_2_2!](./images/lab02/exe1_2_2.png)
 ----------------------------------------------------
 **Пункт №3**
 ```python
@@ -42,8 +42,8 @@ def flatten(flatten_elem):
 print(flatten([[1, 2], [3, 4]]))
 ```
 
-![exe1_3_1!][/images/lab02/exe1_3_1.png]
-![exe1_3_2!][/images/lab02/exe1_3_2.png]
+![exe1_3_1!](./images/lab02/exe1_3_1.png)
+![exe1_3_2!](./images/lab02/exe1_3_2.png)
 
 --------------------------------------------------------------------
 **Задание №2:**
@@ -57,9 +57,8 @@ def transpose(matrix):
 print(transpose([[1, 2], [3, 4]]))
 ```
 
-![exe2_1_1!][/images/lab02/exe2_1_1.png]
-![exe2_1_2!][/images/lab02/exe2_1_2.png]
-----------------------------------------------------
+![exe2_1_2!](./images/lab02/exe2_1_2.png)
+
 **Пункт №2**
 ```python
 def row_sums(col_row_sums):
@@ -74,8 +73,8 @@ def row_sums(col_row_sums):
 print(row_sums([[1, 2, 3], [4, 5, 6]]))
 ```
 
-![exe2_2_1!][/images/lab02/exe2_2_1.png]
-![exe2_2_2!][/images/lab02/exe2_2_2.png]
+![exe2_2_1!](./images/lab02/exe2_2_1.png)
+![exe2_2_2!](./images/lab02/exe2_2_2.png)
 ----------------------------------------------------
 **Пункт №3**
 ```python
@@ -91,8 +90,8 @@ def col_sums(sums_cls):
 print(col_sums([[-1, 1], [10, -10]]))
 ```
 
-![exe2_3_1!][/images/lab02/exe3_3_1.png]
-![exe2_3_2!][/images/lab02/exe3_3_2.png]
+![exe2_3_1!](./images/lab02/exe2_3_1.png)
+![exe2_3_2!](./images/lab02/exe2_3_2.png)
 
 --------------------------------------------------------------------
 **Задание №3:**
@@ -139,8 +138,8 @@ def format_record(tuple_input):
 format_record(tuples)
 ```
 
-![exe3_1!][/images/lab02/exe3_1.png]
-![exe3_2!][/images/lab02/exe3_2.png]
+![exe3_1!](./images/lab02/exe3_1.png)
+![exe3_2!](./images/lab02/exe3_2.png)
 ----------------------------------------------------------
 <!-- Код для изображения: ![название файла!](путь к файлу(изображению)) -->
 -------------------------------------------

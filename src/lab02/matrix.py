@@ -5,7 +5,7 @@ def transpose(matrix):
         raise ValueError
     else:
         return matr_srt(equal_len(matrix))
-print(transpose([[1, 2], [3, 4]]))
+print(*transpose([[1, 2], [3, 4]]))
 
 # Exe 2
 

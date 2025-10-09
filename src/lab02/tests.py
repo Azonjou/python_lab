@@ -1,4 +1,4 @@
-tuples = ("Петров Пётр", "IKBO-12", 5.0)
+tuples = ("Петров Пётр Петрович", "IKBO-12", 5.0)
 
 def format_record(tuple_input):
     """Форматирует входные данные в строку заданного формата
@@ -38,5 +38,3 @@ def format_record(tuple_input):
             name_out += name[i][0].upper() + "."
         print(name_out + ", " + tuple_input[1] + ", " + f"GPA {tuple_input[2]:.2f}")
 format_record(tuples)
-
-

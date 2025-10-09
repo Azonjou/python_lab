@@ -13,7 +13,7 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     return text
 ```
 
-![exe1_1_1!](./images/lab03/exelb3_1.png)
+![exe1_1_1!](/images/lab03/exelb3_1.png)
 ----------------------------------------------------
 **Пункт №2**
 ```python

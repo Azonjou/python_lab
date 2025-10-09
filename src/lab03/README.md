@@ -25,7 +25,7 @@ def tokenize(text: str) -> list[str]:
     return text.split()
 ```
 
-![exe1_1_1!](./images/lab03/exelb3_2.png)
+![exe1_1_1!](/images/lab03/exelb3_2.png)
 ----------------------------------------------------
 **Пункт №3-4**
 ```python
@@ -42,8 +42,8 @@ def top_n(freq: dict[str, int], n: int = 2) -> list[tuple[str, int]]:
 
 
 
-![exe1_1_1!](./images/lab03/exelb3_3.png)
-![exe1_1_1!](./images/lab03/exe3_3_1.png)
+![exe1_1_1!](/images/lab03/exelb3_3.png)
+![exe1_1_1!](/images/lab03/exe3_3_1.png)
 
 --------------------------------------------------------------------
 **Задание B:**
@@ -70,8 +70,8 @@ def text_info(table: bool = True):
 text_info(True)
 ```
 
-![exe1_1_1!](./images/lab03/exelb3_4.png)
+![exe1_1_1!](/images/lab03/exelb3_4.png)
 
-![exe1_1_1!](./images/lab03/exe3_4_1.png)
+![exe1_1_1!](/images/lab03/exe3_4_1.png)
 
 -------------------------------------------

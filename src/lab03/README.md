@@ -3,6 +3,7 @@
 <h2>Лабараторная №3:</h2>
 
 **Задание A:**
+
 **Пункт №1**
 ```python
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:

@@ -2,8 +2,7 @@ import sys
 from text import *
 
 
-def text_info(table: bool = True):
-    text = sys.stdin.readline().strip()
+def text_info(text: str, table: bool = True):
     tokens = tokenize(normalize(text))
     top_words = top_n(count_freq(tokens), 5)
 
@@ -24,6 +23,4 @@ def text_info(table: bool = True):
         for word, count in top_words:
             print(f"{word}: {count}")
 
-
-text_info(False)
 

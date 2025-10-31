@@ -17,7 +17,7 @@ def tokenize(text: str) -> list[str]:
 def count_freq(tokens: list[str]) -> dict[str, int]:
     counts = {}
     for tok in tokens:
-        counts[tok] = counts.get(tok, 0) + 1 #функция задаёт ключу словаря значение, сначала считает их количество в словаре,а потом добавляет к нему 1 и сохраняет в словаре
+        counts[tok] = counts.get(tok, 0) + 1 #функция задаёт ключу словаря значение, сначала считает их количество в словаре, а потом добавляет к нему 1 и сохраняет в словаре
     return counts
 
 def top_n(freq: dict[str, int], n: int = 2) -> list[tuple[str, int]]:
@@ -43,5 +43,3 @@ assert top_n(freq, 2) == [("a",3), ("b",2)]
 freq2 = count_freq(["bb","aa","bb","aa","cc"])
 assert top_n(freq2, 2) == [("aa",2), ("bb",2)]
 
-import sys
-print(sys.path)

@@ -109,3 +109,4 @@ if __name__ == "__main__":
 ![exe1_1_2!](./images/lab04/lab4_2_2.png)
 ![exe1_1_2!](./images/lab04/lab4_2_3.png)
 -------------------------------------------
+#python

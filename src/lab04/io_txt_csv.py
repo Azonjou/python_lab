@@ -39,8 +39,6 @@ def write_csv(rows: Iterable[Sequence], path: str | Path,
                 raise ValueError("Длина строк не одинаковая")
         else:
             w.writerows(rows)
-txt = read_text("../data/lab04/input.txt") # должен вернуть строку
-print(txt)
-write_csv([("word","count"),("test",3)], "../data/lab04/check.csv")
+
 
 

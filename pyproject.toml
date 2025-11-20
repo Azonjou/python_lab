@@ -1,0 +1,21 @@
+[project]
+name = "text-analysis-lab"
+version = "0.1.0"
+description = "Лабораторная работа по анализу текстов"
+authors = [
+    {name = "TemaTik"},
+]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py313']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v"

@@ -1,6 +1,7 @@
 from pathlib import Path
 from text import *
 
+
 def read_text(path: str | Path, encoding: str = "utf-8") -> str:
     p = Path(path)
     if not p.exists():
@@ -12,6 +13,7 @@ def read_text(path: str | Path, encoding: str = "utf-8") -> str:
     except UnicodeDecodeError as e:
         raise UnicodeDecodeError() from e
 
+
 # txt = read_text("../data/lab04/input.txt")
 # print(txt)
 
@@ -19,8 +21,10 @@ import csv
 from pathlib import Path
 from typing import Iterable, Sequence
 
-def write_csv(rows: Iterable[Sequence], path: str | Path,
-              header: tuple[str, ...] | None = None) -> None:
+
+def write_csv(
+    rows: Iterable[Sequence], path: str | Path, header: tuple[str, ...] | None = None
+) -> None:
     p = Path(path)
     rows = list(rows)
     with p.open("w", newline="", encoding="utf-8") as f:
@@ -39,6 +43,3 @@ def write_csv(rows: Iterable[Sequence], path: str | Path,
                 raise ValueError("Длина строк не одинаковая")
         else:
             w.writerows(rows)
-
-
-

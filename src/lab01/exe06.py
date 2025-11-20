@@ -11,12 +11,8 @@ for n in range(int(input())):
     cheklist.append([f, nm, age, bol])
 for i in range(len(cheklist)):
     print(f"in_{i+1}:", cheklist[i][0], cheklist[i][1], cheklist[i][2], cheklist[i][3])
-    if cheklist[i][3] == 'True': tr += 1
-    elif cheklist[i][3] == 'False': fl += 1
+    if cheklist[i][3] == "True":
+        tr += 1
+    elif cheklist[i][3] == "False":
+        fl += 1
 print("out:", tr, fl)
-
-
-
-
-
-

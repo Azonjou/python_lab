@@ -1,5 +1,6 @@
 from function import elem_sort
 
+
 # Exe 1
 def min_max(mns_mxs):
     mns_mxs = [1.5, 2, 2.0, -3.1]
@@ -7,16 +8,22 @@ def min_max(mns_mxs):
         return tuple([min(mns_mxs), max(mns_mxs)])
     else:
         raise ValueError
+
+
 print(min_max([1.5, 2, 2.0, -3.1]))
 # Exe 2
+
 
 def unique_sorted(elements):
     elements = list(set(elem_sort(elements)))
     elements.sort(reverse=False)
     return elements
+
+
 print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 
 # Exe 3
+
 
 def flatten(flatten_elem):
     result_sort = []
@@ -26,30 +33,6 @@ def flatten(flatten_elem):
         else:
             raise TypeError
     return result_sort
+
+
 print(flatten([[1, 2], [3, 4]]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

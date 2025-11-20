@@ -20,7 +20,7 @@ def main():
     args = parser.parse_args()
 
     if args.command == "cat":
-        #py cli_text.py cat --input ../data/samples/people.csv
+        # py cli_text.py cat --input ../data/samples/people.csv
         with open(args.input, "r", encoding="utf-8") as f:
             text = f.readlines()
             try:
@@ -33,7 +33,7 @@ def main():
                 print("Error")
 
     elif args.command == "stats":
-        #py cli_text.py stats --input ../data/samples/people.txt --top 5
+        # py cli_text.py stats --input ../data/samples/people.txt --top 5
         with open(args.input, "r", encoding="utf-8") as f:
             text = f.readlines()
             line_objects = {}
@@ -47,5 +47,7 @@ def main():
                     print(f"{word}: {count}")
             except ValueError:
                 print("Error")
+
+
 if __name__ == "__main__":
     main()

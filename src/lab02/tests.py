@@ -1,5 +1,6 @@
 tuples = ("Петров Пётр Петрович", "IKBO-12", 5.0)
 
+
 def format_record(tuple_input):
     """Форматирует входные данные в строку заданного формата
 
@@ -29,12 +30,16 @@ def format_record(tuple_input):
         >>> format_record(("Петров Пётр Петрович", "IKBO-12", 5.0))
         Петров П.П., IKBO-12, GPA 5.00
     """
-    if len(tuple_input) < 3 or "" in tuple_input[:3]: print("ValueError")
-    elif type(tuple_input[2]) != float: print("TypeError")
+    if len(tuple_input) < 3 or "" in tuple_input[:3]:
+        print("ValueError")
+    elif type(tuple_input[2]) != float:
+        print("TypeError")
     else:
         name = tuple_input[0].strip().split()
-        name_out = name[0].capitalize() + ' '
+        name_out = name[0].capitalize() + " "
         for i in range(1, len(name)):
             name_out += name[i][0].upper() + "."
         print(name_out + ", " + tuple_input[1] + ", " + f"GPA {tuple_input[2]:.2f}")
+
+
 format_record(tuples)

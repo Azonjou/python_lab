@@ -28,10 +28,11 @@ def elem_sort(el_ls):
     """
     lst_sort = []
     for elem in range(len(el_ls)):
-        if str(el_ls[elem]).count('.') == 1: lst_sort.append(float(el_ls[elem]))
-        else: lst_sort.append(int(el_ls[elem]))
+        if str(el_ls[elem]).count(".") == 1:
+            lst_sort.append(float(el_ls[elem]))
+        else:
+            lst_sort.append(int(el_ls[elem]))
     return lst_sort
-
 
 
 def matr_srt(matr_lst):
@@ -64,7 +65,6 @@ def matr_srt(matr_lst):
         for j in range(rows):
             modify_matrix[i][j] = matr_lst[j][i]
     return modify_matrix
-
 
 
 def equal_len(matr_lst):

@@ -22,5 +22,3 @@ def text_info(text: str, table: bool = True):
     else:
         for word, count in top_words:
             print(f"{word}: {count}")
-
-

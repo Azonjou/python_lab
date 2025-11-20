@@ -27,8 +27,9 @@ def main():
     elif args.cmd == "csv2xlsx":
         csv_to_xlsx(args.input, args.output)
 
-#py cli_convert.py json2csv --in ../data/samples/people.json --out ../data/out/people.csv
-#py cli_convert.py csv2json --in ../data/samples/people.csv --out ../data/out/people.json
-#py cli_convert.py csv2xlsx --in ../data/samples/people.csv --out ../data/out/people.xlsx
-if __name__ == '__main__':
+
+# py cli_convert.py json2csv --in ../data/samples/people.json --out ../data/out/people.csv
+# py cli_convert.py csv2json --in ../data/samples/people.csv --out ../data/out/people.json
+# py cli_convert.py csv2xlsx --in ../data/samples/people.csv --out ../data/out/people.xlsx
+if __name__ == "__main__":
     main()

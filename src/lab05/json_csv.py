@@ -54,4 +54,4 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
         json.dump(to_json, f, ensure_ascii=False, indent=2)
 
 
-# csv_to_json("../data/samples/people.csv", "../data/out/people.json")
+# print(csv_to_json("../data/samples/people.csv", "../data/out/people.json"))

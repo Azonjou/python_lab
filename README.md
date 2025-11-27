@@ -1,6 +1,6 @@
 <h1>Прграммирование и алгоритмизация (Лабораторные)</h1>
 
-<h2>Лабораторная №7:</h2>
+<h2>Лабораторная №8:</h2>
 
 **Задание №1:**
 ```python
@@ -60,10 +60,9 @@ print(f"{st1.to_dict()}\n----------------------------------")
 st1.from_dict(st1.to_dict())
 print("----------------------------------")
 print(f"{st1.__str__()}")
-
 ```
 
-![exe1_1_1!](images/lab08/exe1_1.png)
+![exe1_1_1!](./images/lab08/exe1_1.png)
 
 --------------------------------------------------------------------
 **Задание №2:**
@@ -109,14 +108,8 @@ def students_from_json(path):
 
 students_to_json(students, Path("../data/lab08/students_input.json"))
 print(students_from_json("../data/lab08/students_input.json"))
-
 ```
 
-<<<<<<< HEAD
-![exe1_1_1!](images/lab08/exe2_1.png)
+![exe1_1_1!](./images/lab08/exe2_1.png)
 -------------------------------------------
-=======
-![exe1_1_1!](./images/lab07/exe2_1.png)
-![exe1_1_1!](./images/lab07/exeblack.png)
--------------------------------------------
->>>>>>> 1bc7a8f79d2350390405db0478624709d44191dd
+

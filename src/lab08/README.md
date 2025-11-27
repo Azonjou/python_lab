@@ -110,10 +110,6 @@ students_to_json(students, Path("../data/lab08/students_input.json"))
 print(students_from_json("../data/lab08/students_input.json"))
 ```
 
-<<<<<<< HEAD
 ![exe1_1_1!](./images/lab08/exe2_1.png)
 -------------------------------------------
-=======
-![exe1_1_1!](./images/lab08/exe2.png)
--------------------------------------------
->>>>>>> dee18efdebfd2dd4b6d4e34ba81b5a931e7db962
+

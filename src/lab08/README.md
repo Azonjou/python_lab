@@ -62,7 +62,7 @@ print("----------------------------------")
 print(f"{st1.__str__()}")
 ```
 
-![exe1_1_1!](./images/lab08/exe1.png)
+![exe1_1_1!](./images/lab08/exe1_1.png)
 
 --------------------------------------------------------------------
 **Задание №2:**
@@ -110,5 +110,5 @@ students_to_json(students, Path("../data/lab08/students_input.json"))
 print(students_from_json("../data/lab08/students_input.json"))
 ```
 
-![exe1_1_1!](./images/lab08/exe2.png)
+![exe1_1_1!](./images/lab08/exe2_1.png)
 -------------------------------------------

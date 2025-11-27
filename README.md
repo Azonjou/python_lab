@@ -63,7 +63,7 @@ print(f"{st1.__str__()}")
 
 ```
 
-![exe1_1_1!](./images/lab08/exe1.png)
+![exe1_1_1!](images/lab08/exe1_1.png)
 
 --------------------------------------------------------------------
 **Задание №2:**
@@ -113,7 +113,7 @@ print(students_from_json("../data/lab08/students_input.json"))
 ```
 
 <<<<<<< HEAD
-![exe1_1_1!](./images/lab08/exe2.png)
+![exe1_1_1!](images/lab08/exe2_1.png)
 -------------------------------------------
 =======
 ![exe1_1_1!](./images/lab07/exe2_1.png)

@@ -1,9 +1,3 @@
-<h1>Прграммирование и алгоритмизация (Лабораторные)</h1>
-
-<h2>Лабораторная №9:</h2>
-
-**Задание №1:**
-```python
 import csv
 from pathlib import Path
 
@@ -105,13 +99,4 @@ data_update = {
 st = Group("../data/lab09/students.csv")
 st1 = Student("Artem", "2007-12-20", "BIVT", 4.6)
 st.update('Киселева Елена', **data_update)
-
-
-```
-
-![exe1_1_1!](./images/lab09/exe1_1.png)
-![exe1_1_1!](./images/lab09/exe1_2.png)
-![exe1_1_1!](./images/lab09/exe1_3.png)
-![exe1_1_1!](./images/lab09/exe1_4.png)
-![exe1_1_1!](./images/lab09/exe1_5.png)
 

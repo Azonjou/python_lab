@@ -36,6 +36,7 @@ class Student:
         return {
             "fio": self.fio,
             "birthdate": self.birthdate.strftime("%Y-%m-%d"),
+            "group": self.group,
             "gpa": self.gpa,
         }
 
@@ -48,11 +49,6 @@ class Student:
         # TODO: f"{}, {}, {}"
         return f"ФИО: {self.fio}, Дата рождения: {self.birthdate}, GPA: {self.gpa}, "
 
-st1 = Student("No name", "2007-12-20", "SE-01", 4.6)
-print(f"{st1.age()}\n----------------------------------")
-print(f"{st1.to_dict()}\n----------------------------------")
-st1.from_dict(st1.to_dict())
-print("----------------------------------")
-print(f"{st1.__str__()}")
-
+# st = Student("Artem", "2007-12-20", "BIVT", 4.6)
+# print(st.to_dict())
 
